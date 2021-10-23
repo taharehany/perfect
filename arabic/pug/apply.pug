@@ -1,0 +1,43 @@
+extend index
+
+block website_title
+    title Perfect | apply job
+
+block home_index
+    div(class="page")
+        section(class='apply')
+            div(class='container')
+                div(class='title')
+                    h2
+                        span apply 
+                        | job
+                div(class='apply-content')
+                    div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                        p You should check in on some of those fields below.
+                        button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    div(class='form-area')
+                        form(action='')
+                            .row
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Full Name' class='form-control' type='text' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Number' class='form-control' type='number' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Email' class='form-control' type='email' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Years of experience' class='form-control' type='number' required)
+                                div(class="col-lg-12")
+                                    div(class='upload')
+                                        i(class="fas fa-upload")
+                                        label.sr-only(for='file') Upload CV
+                                        input#file(type='file')
+                                div(class="col-lg-12")
+                                    div(class='form-group button')
+                                        button(class='btn hvr-sweep-to-bottom' type='submit') Apply
+                                div(class="col-lg-12")
+                                    p.successfully Thank You For Your Apply

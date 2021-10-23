@@ -1,0 +1,64 @@
+extend index
+
+block website_title
+    title Perfect | build project
+
+block home_index
+    div(class="page")
+        section(class='build-project')
+            div(class='container')
+                div(class='title')
+                    h2 Build 
+                        span your project 
+                div(class='build-content')
+                    div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                        p You should check in on some of those fields below.
+                        button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    div(class='form-area')
+                        form(action='')
+                            .row
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Full Name' class='form-control' type='text' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Number' class='form-control' type='number' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Company Name' class='form-control' type='text' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Email' class='form-control' type='email' required)
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        select#sources(name='sources' placeholder='Project type' class='form-control custom-select sources' required)
+                                            option(value='') option
+                                            option(value='') option
+                                            option(value='') option
+                                            option(value='') option
+                                div(class="col-lg-6")
+                                    div(class='form-group')
+                                        input(placeholder='Country' class='form-control' type='text' required)
+                                div(class="col-lg-6")
+                                    div(class='custom-range time-range')
+                                        .layout-slider
+                                            h4.subtitle Timeline 
+                                            span(style='display: inline-block; width: 100%')
+                                                input#timerange(type='slider' name='time' value='0;2')
+                                div(class="col-lg-6")
+                                    div(class='custom-range budget-range')
+                                        .layout-slider
+                                            h4.subtitle Budget 
+                                            span(style='display: inline-block; width: 100%')
+                                                input#budgetrange(type='slider' name='price' value='100;1000')
+                                div(class="col-lg-12")
+                                    div(class='upload')
+                                        i(class="fas fa-upload")
+                                        label.sr-only(for='file') Upload file
+                                        input#file(type='file')
+                                div(class="col-lg-12")
+                                    div(class='form-group button')
+                                        button(class='btn hvr-sweep-to-bottom' type='submit') Send
+                                div(class="col-lg-12")
+                                    p.successfully Thank You For Your Time :)

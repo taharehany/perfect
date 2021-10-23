@@ -1,0 +1,26 @@
+extend index
+
+block website_title
+    title Perfect | single service
+
+block home_index
+    div(class="page")
+        //single service page
+        section(class="service-details")
+            div(class="container")
+                div(class="subtitle")
+                    i(class="fas fa-mobile-alt")
+                    h2 Mobile apps
+                div(class="service-content")
+                    .row 
+                        .col-lg-7
+                            .service-text
+                                p Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum in laying out print, graphic or web designs.
+                        .col-lg-5
+                            .service-image
+                                img(src="images/services/single.png", alt="")
+
+        include includes/home-offers.pug
+        
+        include includes/home-partners.pug
+        //single service page

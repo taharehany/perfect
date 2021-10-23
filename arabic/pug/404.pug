@@ -1,0 +1,14 @@
+extend index
+
+block website_title
+    title Perfect | error 404
+
+block all_index
+    block home_index
+        section(class="error404")
+            .container 
+                .error-content 
+                    h2 404
+                    p Page Not Found
+                    .button 
+                        a(href="" class="btn hvr-sweep-to-bottom") home page
